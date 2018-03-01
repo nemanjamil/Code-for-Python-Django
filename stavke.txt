@@ -1,0 +1,11 @@
+#kreiranje projekta
+django-admin.py startproject mysite
+
+#
+python manage.py runserver
+
+#
+python manage.py startapp todo
+
+#
+python manage.py migrate
