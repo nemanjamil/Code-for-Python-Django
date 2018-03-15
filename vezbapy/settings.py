@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# nemanja test 1
+# nemanja test 1 nemanja dev
 # Application definition
 
 INSTALLED_APPS = [
