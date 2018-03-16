@@ -9,3 +9,12 @@ python manage.py startapp todo
 
 #
 python manage.py migrate
+
+#
+python manage.py sqlmigrate blog 0001
+
+# kada hocemo i blog da uhvatimo i to nam kreira 0001_initial.py
+python manage.py makemigrations
+
+# kreiramo usera aaaassss
+python manage.py createsuperuser
