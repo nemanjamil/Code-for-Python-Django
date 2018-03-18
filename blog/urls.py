@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from django.views.generic import  ListView, DeleteView
+from django.views.generic import  ListView, DetailView
 from blog.models import Post
 from blog.models import Vuktabela
 from . import views
@@ -15,7 +15,8 @@ urlpatterns = [
         template_name="blog/vuktabela.html"
     )),
 
-
-
+    url(r'^(?P<pk>\d+)/$',DetailView.as_view(
+        model=Post, template_name="blog/post.html"
+    )),
 
 ]
